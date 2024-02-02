@@ -78,10 +78,7 @@ export const Input = styled.input`
     text-align: left;
     color: #FFFFFF;
 
-
-
-
-
+   
     
 `;
 export const Button = styled.button`
@@ -105,6 +102,15 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
+    &:hover{
+        opacity: 0.7;
+
+    }
+
+    &:active{
+        opacity:0.5;
+    }
 
 
 
