@@ -77,9 +77,7 @@ export const Input = styled.input`
     letter-spacing: 0px;
     text-align: left;
     color: #FFFFFF;
-
-   
-    
+        
 `;
 export const Button = styled.button`
 
