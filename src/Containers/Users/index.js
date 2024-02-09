@@ -6,9 +6,11 @@ import Trash from "../../assets/trash.png";
 import axios from "axios";
 
 import { Container, Image, ConteinerItens, H1, Button, User } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 function Users() {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchuser() {
@@ -24,6 +26,9 @@ function Users() {
     const newUsers = users.filter((user) => user.id !== userId);
 
     setUsers(newUsers);
+  }
+  function goBackPage() {
+    navigate("/");
   }
 
   return (
@@ -44,7 +49,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button>
+        <Button onClick={goBackPage}>
           <img alt="seta" src={Arrow} />
           Voltar
         </Button>

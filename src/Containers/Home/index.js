@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Avatar from "../../assets/avatar.png";
 import Arrow from "../../assets/arrow.png";
@@ -16,6 +17,7 @@ import {
 
 function App() {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
   const inputName = useRef();
   const inputAge = useRef();
 
@@ -29,6 +31,8 @@ function App() {
     );
 
     setUsers([...users, postUsers]);
+
+    navigate("/usuarios");
   }
 
   return (
@@ -46,8 +50,6 @@ function App() {
           Cadastrar
           <img alt="seta" src={Arrow} />
         </Button>
-
-       
       </ConteinerItens>
     </Container>
   );

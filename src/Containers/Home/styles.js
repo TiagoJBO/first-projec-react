@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import Background from "../../assets/bg image.png";
 
 export const Container = styled.div`
@@ -8,7 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 `;
 
 export const Image = styled.img`

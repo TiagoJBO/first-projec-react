@@ -1,20 +1,16 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom/cjs/react-router-dom.min";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Containers/Home";
 import Users from "./Containers/Users";
 
-function Routes() {
+function myRoutes() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/usuarios" component={Users} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/usuarios" element={<Users />} />
+      </Routes>
     </Router>
   );
 }
-export default Routes;
+export default myRoutes;
