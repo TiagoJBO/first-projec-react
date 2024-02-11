@@ -4,8 +4,11 @@ import Avatar from "../../assets/avatar2.png";
 import Arrow from "../../assets/arrow.png";
 import Trash from "../../assets/trash.png";
 import axios from "axios";
+import ContainerItens from "../../components/ContainerItens";
+import H1 from "../../components/Titles";
+import Button from "../../components/button";
 
-import { Container, Image, ConteinerItens, H1, Button, User } from "./styles";
+import { Container, Image, User } from "./styles";
 import { useNavigate } from "react-router-dom";
 
 function Users() {
@@ -34,7 +37,7 @@ function Users() {
   return (
     <Container>
       <Image alt="logo-image" src={Avatar} />
-      <ConteinerItens>
+      <ContainerItens isBlur={true}>
         <H1>Usuarios</H1>
 
         <ul>
@@ -49,11 +52,11 @@ function Users() {
           ))}
         </ul>
 
-        <Button onClick={goBackPage}>
+        <Button isBack={true} onClick={goBackPage}>
           <img alt="seta" src={Arrow} />
           Voltar
         </Button>
-      </ConteinerItens>
+      </ContainerItens>
     </Container>
   );
 }

@@ -5,15 +5,12 @@ import Avatar from "../../assets/avatar.png";
 import Arrow from "../../assets/arrow.png";
 import axios from "axios";
 
-import {
-  Container,
-  Image,
-  ConteinerItens,
-  H1,
-  InputLabel,
-  Input,
-  Button,
-} from "./styles";
+import H1 from "../../components/Titles";
+
+import ContainerItens from "../../components/ContainerItens";
+import Button from "../../components/button";
+
+import { Container, Image, InputLabel, Input } from "./styles";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -38,7 +35,7 @@ function App() {
   return (
     <Container>
       <Image alt="logo-image" src={Avatar} />
-      <ConteinerItens>
+      <ContainerItens>
         <H1>Olá!</H1>
         <InputLabel>Nome</InputLabel>
         <Input ref={inputName} placeholder="Nome" />
@@ -50,7 +47,7 @@ function App() {
           Cadastrar
           <img alt="seta" src={Arrow} />
         </Button>
-      </ConteinerItens>
+      </ContainerItens>
     </Container>
   );
 }

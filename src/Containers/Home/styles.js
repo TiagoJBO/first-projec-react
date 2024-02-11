@@ -16,28 +16,8 @@ export const Container = styled.div`
 export const Image = styled.img`
   margin-top: 30px;
 `;
-export const ConteinerItens = styled.div`
-  background: linear-gradient(
-    157.44deg,
-    rgba(255, 255, 255, 0.6) 0.84%,
-    rgba(255, 255, 255, 0.6) 0.85%,
-    rgba(255, 255, 255, 0.15) 100%
-  );
-  border-radius: 61px 61px 0px 0px;
-  padding: 50px 36px;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-`;
-export const H1 = styled.h1`
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0px;
-  text-align: center;
-`;
+
+
 export const InputLabel = styled.p`
   font-family: Roboto;
   font-size: 18px;
@@ -71,33 +51,4 @@ export const Input = styled.input`
   letter-spacing: 0px;
   text-align: left;
   color: #ffffff;
-`;
-export const Button = styled.button`
-  width: 342px;
-  height: 74px;
-
-  background: #000000cc;
-  border-radius: 14px;
-  border: none;
-  margin-top: 130px;
-  font-style: normal;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 28px;
-
-  color: #ffffff;
-
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 `;
